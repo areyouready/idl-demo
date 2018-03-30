@@ -42,6 +42,21 @@ public class CacheConfiguration {
             cm.createCache(de.fnortheim.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(de.fnortheim.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(de.fnortheim.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(de.fnortheim.domain.Department.class.getName(), jcacheConfiguration);
+            cm.createCache(de.fnortheim.domain.Department.class.getName() + ".employees", jcacheConfiguration);
+            cm.createCache(de.fnortheim.domain.JobHistory.class.getName(), jcacheConfiguration);
+            cm.createCache(de.fnortheim.domain.Job.class.getName(), jcacheConfiguration);
+            cm.createCache(de.fnortheim.domain.Job.class.getName() + ".tasks", jcacheConfiguration);
+            cm.createCache(de.fnortheim.domain.Employee.class.getName(), jcacheConfiguration);
+            cm.createCache(de.fnortheim.domain.Employee.class.getName() + ".jobs", jcacheConfiguration);
+            cm.createCache(de.fnortheim.domain.Location.class.getName(), jcacheConfiguration);
+            cm.createCache(de.fnortheim.domain.Task.class.getName(), jcacheConfiguration);
+            cm.createCache(de.fnortheim.domain.Task.class.getName() + ".jobs", jcacheConfiguration);
+            cm.createCache(de.fnortheim.domain.Country.class.getName(), jcacheConfiguration);
+            cm.createCache(de.fnortheim.domain.Region.class.getName(), jcacheConfiguration);
+            cm.createCache(de.fnortheim.domain.Book.class.getName(), jcacheConfiguration);
+            cm.createCache(de.fnortheim.domain.Author.class.getName(), jcacheConfiguration);
+            cm.createCache(de.fnortheim.domain.Author.class.getName() + ".books", jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

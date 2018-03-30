@@ -1,0 +1,13 @@
+entity Book {
+    title String required,
+    releaseDate ZonedDateTime
+}
+
+entity Author {
+    name String required
+}
+
+relationship OneToMany {
+    Author{books} to Book
+}
+
